@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Simple Quiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+	<div class="background">
+
+		<div class="quiz-wrapper">
+			<div class="">
+			<div class="quiz" id="quiz">
+
+			</div>
+			<div class="btns">
+				<div>
+					<button class="prev">назад</button>
+				</div>
+				<div class="dots">
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					<div id="dots" class="dots-purple"></div>
+					
+				</div>
+				<div>
+					<button class="next">Далее</button>
+				</div>
+			</div>
+		</div> 
+        <!--Нормальная кожа-->
+		<div data-score="1" class="respons-output disabled">
+				<p class="skin-type-title">Нормальная кожа</p>
+				<p class="skin-type-sub-title">Кожа гладкая, упругая и эластичная, с равномерным оттенком.
+					 На ней почти незаметно пор и черных точек. Такая кожа
+					  практически не имеет проблем, потому что может самостоятельно
+					   компенсировать негативное влияние внешних факторов.</p>
+				<p class="skin-care-title">Уход  за нормальной кожей</p>
+				<p class="skin-care-sub-title">Нормальной коже подойдет уход с минимальным количеством
+					 средств, включающий в себя очищение и использование
+					  питательных и увлажняющих средств. Главное — не
+					   пересушивать кожу и не спровоцировать закупорку пор.</p>
+				<div class="image-gallary">
+					<div class="galary-item">
+						<img src="./image/1.1.png" alt="">
+						<p class="galary-item-text">Очищающая пенка для умывания Ultra Tolerance</p>
+					</div>
+					<div class="galary-item">
+						<img src="./image/1.2.png" alt="">
+						<p class="galary-item-text">Минеральный тоник-активатор Chrono Energy</p>
+					</div>
+					<div class="galary-item">
+						<img src="./image/1.3.png" alt="">
+						<p class="galary-item-text">Увлажняющая сыворотка с минералами и гиалуроновой кислотой Aqua Recovery</p>
+					</div>
+					<div class="galary-item">
+						<img src="./image/1.4.png" alt="">
+						<p class="galary-item-text"> Увлажняющий крем с минералами и гиалуроновой кислотой Aqua Recovery</p>
+					</div>
+					
+				</div>
+				<p class="danger">*Необходимо проконсультироваться со специалистом.</p>
+		</div>
+
+		 <!--Сухая кожа-->
+		 <div data-score="2" id="test" class="respons-output disabled">
+			<p class="skin-type-title">СУХАЯ кожа</p>
+			<p class="skin-type-sub-title">Кожа тонкая, матовая, обладает узкими порами
+				, зачастую шелушится, плохо переносит умывание водой и влияние внешних факторов.</p>
+			<p class="skin-care-title">Уход  за СУХОЙ кожей</p>
+			<p class="skin-care-sub-title">Сухой кожей лица необходим многоступенчатый 
+				комплексный уход. Для очищения стоит выбирать мягкие и щадящие средства. 
+				Обязательно используйте тоник, он сбалансирует рН и обеспечит коже 
+				дополнительное увлажнение. После тоника нанесите увлажняющую сыворотку,
+				 а затем крем.</p>
+			<div class="image-gallary">
+				<div class="galary-item">
+					<img src="./image/2.1.png" alt="">
+					<p class="galary-item-text">Очищающий крем-гель для умывания c про- и пребиотиками SkinBiom</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/2.2.png" alt="">
+					<p class="galary-item-text">Увлажняющий тоник для лица Physio Ponic</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/2.3.png" alt="">
+					<p class="galary-item-text">Увлажняющая сыворотка-концентрат с гиалуроновой кислотой Feel The Moist</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/2.4.png" alt="">
+					<p class="galary-item-text"> Успокаивающий крем с комплексом пре- и пробиотиков SensiCare</p>
+				</div>
+				
+			</div>
+			<p class="danger">*Необходимо проконсультироваться со специалистом.</p>
+		</div>
+
+		 <!--Жирная кожа-->
+		 <div data-score="3" class="respons-output disabled">
+			<p class="skin-type-title">ЖИРНАЯ кожа</p>
+			<p class="skin-type-sub-title">Кожа с характерным чрезмерным блеском,
+				 расширенными порами и высыпаниями. Жирная кожа требует повышенного
+				  внимания к имеющимся проблемам, правильного домашнего и 
+				  профессионального ухода.</p>
+			<p class="skin-care-title">Уход  за жирной кожей</p>
+			<p class="skin-care-sub-title">Комплексный уход за жирной кожей включает
+				 в себя несколько этапов: очищение, тонизирование и увлажнение
+				 . Очищать кожу необходимо всего два раза в день: утром и вечером.
+				  После умывания лучше всего использовать одноразовые бумажные полотенца.
+				   При выборе средств обратите внимание на косметику, специально разработанную
+				    с учётом потребностей данного типа кожи. </p>
+			<div class="image-gallary">
+				<div class="galary-item">
+					<img src="./image/3.1.png" alt="">
+					<p class="galary-item-text">Очищающий гель для лица и тела Blemish Control  2в1</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/3.2.png" alt="">
+					<p class="galary-item-text">Очищающий тоник-активатор Ultra Skin</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/3.3.png" alt="">
+					<p class="galary-item-text">Себорегулирующая сыворотка-концентрат с ниацинамидом Rest Your Sebum</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/3.4.png" alt="">
+					<p class="galary-item-text"> Увлажняющий флюид для лица Aqua Balance</p>
+				</div>
+				
+			</div>
+			<p class="danger">*Необходимо проконсультироваться со специалистом.</p>
+		</div>
+
+		 <!--Комбинированая кожа-->
+		 <div data-score="4" class="respons-output disabled">
+			<p class="skin-type-title">Комбинированная кожа</p>
+			<p class="skin-type-sub-title">Кожа с ярко-выраженным жирным блеском в области Т-зоны
+				(лоб, нос и подбородок), а вокруг глаз и на щеках кожа — нормальная или сухая.</p>
+			<p class="skin-care-title">Уход  за Комбинированной кожей</p>
+			<p class="skin-care-sub-title">Главное в уходе за комбинированной кожей
+				 — восстановить баланс и поддерживать его. Для очищения и обработки
+				  Т-зоны подойдут себорегулирующие средства. После этапа очищения 
+				  и тонизирования лучше всего использовать сыворотку и легкий
+				   крем-флюид.</p>
+			<div class="image-gallary">
+				<div class="galary-item">
+					<img src="./image/4.1.png" alt="">
+					<p class="galary-item-text">Очищающая пенка для умывания Ideal Balance </p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/4.2.png" alt="">
+					<p class="galary-item-text">Обновляющий тоник-активатор с кислотами Perfect Glow</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/4.3.png" alt="">
+					<p class="galary-item-text">Себорегулирующая сыворотка-концентрат с ниацинамидом Rest Your Sebum</p>
+				</div>
+				<div class="galary-item">
+					<img src="./image/4.4.png" alt="">
+					<p class="galary-item-text"> Увлажняющий флюид с пептидами и гиалуроновой кислотой Aqua Essence</p>
+				</div>
+				
+			</div>
+			<p class="danger">*Необходимо проконсультироваться со специалистом.</p>
+	</div>
+		
+				
+	</div>
+			
+			</div>
+	
+	
+		</div>
+		
+	
+		<script src="./main.js"></script>
+	</div>
+
+	
+</body>
+</html>
