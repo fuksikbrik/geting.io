@@ -124,7 +124,7 @@ body{
     background: #7A3BA4;
     color: #FFFFFF !important;
 }
-.active >.number-answer{
+.active > .number-answer{
     color: white !important;
 }
 
