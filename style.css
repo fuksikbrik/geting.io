@@ -1,22 +1,10 @@
 @font-face {
-    font-family: SBS-B;
-    src: url(./font/SBSansDisplay-Bold.otf);
+    font-family: Mega Sans Beta;
+    src: url(./font/MegaSansBeta-Regular_v02-08.otf);
 }
 @font-face {
-    font-family: SBS-L;
-    src: url(./font/SBSansDisplay-Light.otf);
-}
-@font-face {
-    font-family: SBS-R;
-    src: url(./font/SBSansDisplay-Regular.otf);
-}
-@font-face {
-    font-family: SBS-S;
-    src: url(./font/SBSansDisplay-SemiBold.otf);
-}
-@font-face {
-    font-family: SBS-T;
-    src: url(./font/SBSansDisplay-Thin.otf);
+    font-family: Mega Sans S;
+    src: url(./font/MegaSansS-Bold.otf);
 }
 *{
     margin: 0;
@@ -26,13 +14,14 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
+   
 }
 a {
     text-decoration: none;
 }
 .background{
     background-color: #8654CC;
+    overflow-x: hidden;
     min-height: 100vh;
     width: 100%;
     background-repeat: no-repeat no-repeat;
@@ -131,6 +120,7 @@ a {
     text-align: center;
     font-family: Mega Sans Beta;
     font-size: 14px;
+    font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
 }
@@ -140,6 +130,38 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+.quiz-element-1{
+    top: 5%;
+    left: 5%;
+}
+.quiz-element-2{
+    top: 5%;
+    right: 5%;
+}
+.quiz-element-3{
+    bottom: 5%;
+    left: 5%;
+}
+.quiz-element-4{
+    bottom: 5%;
+    right: 5%;
+}
+.end-element-1{
+    top: 5%;
+    left: 5%;
+}
+.end-element-2{
+    top: 5%;
+    right: 5%;
+}
+.end-element-3{
+    bottom: 5%;
+    left: 5%;
+}
+.end-element-4{
+    bottom: 5%;
+    right: 5%;
+}
 .quiz-wrapper{
     max-width: 1160px;
     display: flex;
@@ -147,9 +169,14 @@ a {
     justify-content: space-between;
     align-self: center;
 }
+.svg-quiz{
+    display: flex;
+    justify-content: center;
+    margin: 27px 0px 27px 0px;
+}
 
 .quiz-card{
-    max-width: 302px;
+    max-width: 300px;
     width: -webkit-fill-available;
     height: 359px;
     border: 1px solid #000000;
@@ -167,6 +194,9 @@ a {
 .quiz-card:hover > .number-answer{
     color: white !important;
 }
+.quiz-card:hover > .answer{
+    color: white 
+}
 .quiz-card:hover{
     background: #7A3BA4;
     color: white;
@@ -180,6 +210,9 @@ a {
 }
 .active > .number-answer{
     color: white !important;
+}
+.active > .answer {
+    color: white;
 }
 
 .question{
@@ -218,7 +251,7 @@ a {
     border: 0;
     width: 150px;
     height: 54px;
-    font-family: SBS-B;
+    font-family: Mega Sans S;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -259,6 +292,7 @@ a {
     color: #6933B0;
     font-family: Mega Sans Beta;
     font-size: 28px;
+    transition: .6s;
 }
 .dots{
     display: flex;
@@ -293,7 +327,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: #C2F09C;
-    margin: 100px 0px 13px 0px;
+    margin: 0px 0px 13px 0px;
 }
 .title-and-number{
     width: 100%;
@@ -318,7 +352,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin: 100px 0px 22px 0px ;
+    margin: 0px 0px 22px 0px ;
 }
 .skin-type-sub-title{
     font-family: Mega Sans Beta;
@@ -364,7 +398,7 @@ a {
 }
 .image-gallary{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
     margin: 40px 0px 0px 0px ;
 }
@@ -375,6 +409,25 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.galary-item-title{
+    color: #8654CC;
+    text-align: center;
+    font-family: Mega Sans Beta;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.galary-item-sub-title{
+    
+    color: #8654CC;
+    text-align: center;
+    font-family: Mega Sans Beta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .galary-item img {
     transition: .2s;
@@ -395,12 +448,21 @@ a {
     color: #3A3A3A;
     margin: 12px 0px 0px 0px ;
 }
+.text-megamarket{
+    color: #FFF;
+    text-align: center;
+    font-family: Mega Sans Beta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 26px 0px 46px 0px ;
+}
 .end-button{
     display: flex;
     justify-content: center;
     gap: 40px;
     align-items: center;
-    margin-top: 40px;
     margin-bottom: 58px;
 }
 .testRepeat {
@@ -431,10 +493,32 @@ a {
     border-radius: 30px;
     background: #C2F09C;
     text-transform: uppercase;
+    transition: .6s;
+}
+.promo-button:hover{
+    background: #FFF;
+}
+.site{
+    width: 300px;
+    text-decoration: none;
+    padding: 15px 0px;
+    color: #6933B0;
+    text-align: center;
+    font-family: Mega Sans S;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #FFE3C7;
+    transition: .6s;
+}
+.site:hover{
+    background: #FFF;
 }
 a.testRepeat:hover, .button-main:hover {
-    background: #7A3BA4;
-    color: #FFF;
+    color: #6933B0;
+    background: #FFF;
 }
 .circleText {
     position: absolute;
@@ -457,7 +541,20 @@ a.testRepeat:hover, .button-main:hover {
 }
 @media screen and (max-width:1700px){
     .btns{
-        margin: 34px 0px 17vh 0px;
+        margin: 34px 0px 80px 0px;
+    }
+}
+@media screen and (max-width:1500px) {
+    .index-footer-text{
+        margin-bottom: 100px;
+    }
+    .end-element-4 {
+        bottom: 3%;
+        right: 5%;
+    }
+    .end-element-3 {
+        bottom: 3%;
+        right: 5%;
     }
 }
 @media screen and (max-width:1280px){
@@ -465,7 +562,7 @@ a.testRepeat:hover, .button-main:hover {
         max-width: 960px;
     }
     .quiz-card{
-        width: 438px;
+        width: 236px;
     }
     .galary-item{
         width: 24%;
@@ -473,18 +570,28 @@ a.testRepeat:hover, .button-main:hover {
     .galary-item > img{
         width: 100%;
     }
+    .number-question{
+        margin-top: 180px;
+    }
 
 }
 @media screen and (max-width:1024px){
     .background{
         background-color: #8654CC;
-        background-size: cover ;
         height: 100%;
         width: 100%;
-        background-repeat: no-repeat no-repeat;
-        position: relative;
-        background-position: top center;
-        background-attachment: fixed;
+    }
+    .quiz-card{
+        height: 219px;
+        width: 27.5%;
+        padding: 18px;
+    }
+    .number-answer{
+        margin-bottom: 80px;
+        font-size: 16px;
+    }
+    .quiz{
+        gap: 16px;
     }
     
     .quiz-wrapper{
@@ -496,6 +603,43 @@ a.testRepeat:hover, .button-main:hover {
      .image-gallary{
         gap: 20px;
      }
+     .question-center{
+        font-size: 28px;
+     }
+     .answer{
+        font-size: 20px;
+     }
+     .index-element{
+        width: 120px;
+     }
+     .svg-quiz{
+        margin: 50px 0px 80px 0px ;
+     }
+     .end-element-1{
+        left: 2%;
+        top: 2%;       
+    }
+    .end-element-2{
+        right: -5%;
+        top: 1%;
+    }
+    .end-element-3{
+        left: 2%;
+        bottom: 7%;
+        z-index: 1;
+    }
+    .end-element-4{
+        right: 1%;
+        bottom: 4%;
+    }
+    .end-button{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .index-footer-text{
+        margin-bottom: 40px;
+    }
 }
 @media screen and (max-width:745px){
     .quiz-card{
@@ -512,11 +656,6 @@ a.testRepeat:hover, .button-main:hover {
     }
     .skin-care-sub-title{
         font-size: 16px;
-    }
-    .image-gallary{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
     .galary-item{
         width: 47%;
@@ -559,14 +698,22 @@ a.testRepeat:hover, .button-main:hover {
     .circleText {
         display: none;
     }
+    .image-gallary{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galary-item{
+        width: 35%;
+    }
     
 }
 @media screen and (max-width:450px){
     .answer{
-        font-size: 14px;
+        font-size: 16px;
     }
     .number-answer{
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 24px;
     }
     .question-center{
         font-size:14px ;
@@ -588,7 +735,7 @@ a.testRepeat:hover, .button-main:hover {
         font-size: 22px;
     }
     .skin-type-sub-title{
-        font-size: 12px;
+        font-size: 14px;
     }
     .skin-care-title{
         font-size: 22px;
@@ -609,5 +756,93 @@ a.testRepeat:hover, .button-main:hover {
     }
     .text-main{
         font-size: 14px;
+    }
+    .quiz-card{
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+        height: 98px;
+        z-index: 2;
+    }
+    .btns{
+        z-index: 2;
+        position: sticky;
+    }
+    .index-element{
+        max-width: 100px;
+    }
+    .quiz-element-1{
+        left: 0;       
+    }
+    .quiz-element-2{
+        right: -10%;
+        top: 3%;
+    }
+    .quiz-element-3{
+        left: -2%;
+        bottom: 22%;
+        z-index: 1;
+    }
+    .quiz-element-4{
+        right: -4%;
+        bottom: 26%;
+    }
+    .end-element-1{
+        left: 0;
+        top: 1%;       
+    }
+    .end-element-2{
+        right: -10%;
+        top: 3%;
+    }
+    .end-element-3{
+        left: -2%;
+        bottom: 1%;
+        z-index: 1;
+    }
+    .end-element-4{
+        right: -4%;
+        bottom: 1%;
+    }
+    .number-question{
+        margin-top: 55px;
+        font-size: 30px;
+    }
+    .image-gallary{
+        display: flex;
+    }
+    .galary-item{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        padding: 31px 24px 31px 18px;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+    }
+    .galary-item > img{
+        width: 141px;
+        margin: auto 0;
+    }
+    .end-button{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    .testRepeat{
+        width: 100%;
+    }
+    .promo-button{
+        width: 100%;
+    }
+    .site{
+        width: 100%;
+    }
+    .svg-quiz{
+        margin: 50px 0;
+    }
+    .index-footer-text{
+        margin-bottom: 100px;
     }
 }

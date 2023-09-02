@@ -3,6 +3,7 @@
 const questions = [
 	//1
 	{
+		numberQuestion:'01',
 		question: "Где вы предпочитаете бегать?",
 		answers: [
 			"На беговой дорожке в зале ",
@@ -19,6 +20,7 @@ const questions = [
 	},
 	//2
 	{
+		numberQuestion:'02',
 		question: "Вы будете использовать кроссовки только как беговые? или также для других задач?",
 		answers: [
 			"Бег и пешие прогулки",
@@ -35,6 +37,7 @@ const questions = [
 	},
 	//3
 	{
+		numberQuestion:'03',
 		question: "Какой стиль бега вы предпочитаете?",
 		answers: [
 			"Бег трусцой",
@@ -51,6 +54,7 @@ const questions = [
 	},
 	//4
 	{
+		numberQuestion:'04',
 		question: "Для каких задач вы выбираете кроссовки?",
 		answers: [
 			"Для легких тренировок",
@@ -67,6 +71,7 @@ const questions = [
 	},
 	//5
 	{
+		numberQuestion:'05',
 		question: "Как часто вы занимаетесь?",
 		answers: [
 			"Бегаю 1-2 раза в неделю",
@@ -83,6 +88,7 @@ const questions = [
 	},
 	//6
 	{
+		numberQuestion:'06',
 		question: "В какую погоду будете бегать?",
 		answers: [
 			"Лето",
@@ -99,6 +105,7 @@ const questions = [
 	},
 	//7
 	{
+		numberQuestion:'07',
 		question: "В какой обуви вам удобнее бегать?",
 		answers: [
 			"Без разницы, самое главное, чтобы обувь была красивой",
@@ -115,6 +122,7 @@ const questions = [
 	},
 	//8
 	{
+		numberQuestion:'08',
 		question: "В каком темпе вы чаще всего бегаете?",
 		answers: [
 			"6 мин/км и медленнее",
@@ -131,6 +139,7 @@ const questions = [
 	},
 	//9
 	{
+		numberQuestion:'09',
 		question: " Как вы обычно ставите ногу во время приземления на поверхность?",
 		answers: [
 			"Приземляюсь на носок",
@@ -147,12 +156,12 @@ const questions = [
 	},
 	//10
 	{
-		question: " Какой у вас подъем?",
+		numberQuestion:'10',
+		question: "Какой у вас подъем?",
 		answers: [
 			"Нормальный",
 			"Высокий",
 			"Низкий", 
-			
 		],
 		image:[
 			"./image/botel.png",
@@ -186,12 +195,13 @@ let finalAnswers = [];
 const showQuestion = (index) => {
   const question = document.createElement("div");
 
-  question.innerHTML = `<h1 class="number-question"> 0${indexQuestion}</h1> 
+  question.innerHTML = `<div class="svg-quiz"><img  src="./image/svg-quiz.svg" alt=""></div>
+  						<h1 class="number-question"> ${questions[index].numberQuestion}</h1> 
   						<h1 class="question-center">${questions[index].question}</h1>
-						<img class="index-element-1 index-element" src="${questions[index].image[0]}" alt="">
-						<img class="index-element-2 index-element" src="${questions[index].image[1]}" alt="">
-						<img class="index-element-3 index-element" src="${questions[index].image[2]}" alt="">
-						<img class="index-element-4 index-element" src="${questions[index].image[3]}" alt="">
+						<img class="quiz-element-1 index-element" src="${questions[index].image[0]}" alt="">
+						<img class="quiz-element-2 index-element" src="${questions[index].image[1]}" alt="">
+						<img class="quiz-element-3 index-element" src="${questions[index].image[2]}" alt="">
+						<img class="quiz-element-4 index-element" src="${questions[index].image[3]}" alt="">
 						`;
   question.classList.add('title-and-number');
 
@@ -199,7 +209,7 @@ const showQuestion = (index) => {
     
 	
 	const answer = document.createElement("div");
-    answer.innerHTML = `<p class="number-answer" data-value="${index + 1}">${index +1}.</p>
+    answer.innerHTML = `<p class="number-answer" data-value="${index + 1}">0${index +1}.</p>
 					    <p class="answer" data-value="${index + 1}">${el}</p>`;
 	
 	answer.classList.add('quiz-card')
