@@ -1,13 +1,39 @@
+@font-face {
+    font-family: SBS-B;
+    src: url(./font/SBSansDisplay-Bold.otf);
+}
+@font-face {
+    font-family: SBS-L;
+    src: url(./font/SBSansDisplay-Light.otf);
+}
+@font-face {
+    font-family: SBS-R;
+    src: url(./font/SBSansDisplay-Regular.otf);
+}
+@font-face {
+    font-family: SBS-S;
+    src: url(./font/SBSansDisplay-SemiBold.otf);
+}
+@font-face {
+    font-family: SBS-T;
+    src: url(./font/SBSansDisplay-Thin.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
-
+a {
+    text-decoration: none;
+}
 .background{
-    background: url(./image/background.png) ;
-    background-size: cover ;
-    height: 100%;
+    background-color: #8654CC;
+    min-height: 100vh;
     width: 100%;
     background-repeat: no-repeat no-repeat;
     position: relative;
@@ -17,74 +43,100 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.title-main{
-    font-family: 'Noto Sans Display', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 103px;
-    line-height: 114.4%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #3A3A3A;
-    margin: 80px 0px 0px 0px ;
-}
-.sub-title-main{
-    font-family: 'Noto Sans Display', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 58px;
-    line-height: 114.4%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #3A3A3A;
-    margin:  7px 0px 0px 0px ;
-}
-.text-main{
-    font-family: 'Noto Sans Display', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 114.4%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #3A3A3A;
-    margin: 95px 0px 25px 0px ;
-}
 .wrapper-main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 170px 0px;
+    position: sticky;
 }
-.header-logo{
+.index-element{
+    position: absolute;
+    max-width: 169px;
+    animation: animation 3s infinite none;
+}
+@keyframes animation  {
+    0%{
+        transform: rotate(-7deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(-7deg);
+    }
+}
+.index-element-1{
+    top: 25%;
+    left: 0;
+}
+.index-element-2{
+    top: 15%;
+    right: 0;
+}
+.index-element-3{
+    bottom: 10%;
+    left: 0;
+}
+.index-element-4{
+    bottom: 10%;
+    right: 0;
+}
+.index-logo{
+    margin: 134px 0px 36px 0px ;
+}
+.home-question{
+    color: #FFF;
+    text-align: center;
+    font-family: Mega Sans S;
+    font-size: 40px;
+    text-align: center;
+}
+.gallery-sneakers{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    gap: 40px;
+    margin-top: 47px;
 }
-.space{
-    width: 33px;
+.gallery-sneakers .gallery-sneakers-item{
+    width: 16%;
 }
 .button-main{
-    border: 1px solid #000000;
+    background-color: white;
     border-radius: 36.5px;
     width: 360px;
     height: 73px;
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: Mega Sans S;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 114.4%;
     text-align: center;
     text-transform: uppercase;
-    color: #3A3A3A;
+    color: #6933B0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: .5s;
+    margin: 28px 0px 145px 0px;
+}
+.index-footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.index-footer-text-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Mega Sans Beta;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
 }
 .quiz{
     width: 100%;
-    gap: 20px;
+    gap: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -97,12 +149,14 @@ body{
 }
 
 .quiz-card{
-    width: 537px;
-    height: 210px;
+    max-width: 302px;
+    width: -webkit-fill-available;
+    height: 359px;
     border: 1px solid #000000;
     border-radius: 30px;
-    padding: 30px 0px 0px 30px;
-    font-family: 'Noto Sans Display', sans-serif;
+    padding: 39px 25px 0px 30px;
+    background: #EDCFFC;
+    font-family: SBS-R;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -129,7 +183,7 @@ body{
 }
 
 .question{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: SBS-B;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -143,73 +197,75 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 34px 0px 20vh 0px  ;
+    margin: 34px 0px 66px 0px  ;
 }
 .question-center{
     text-align: center;
-    height: 100px;
+    margin-bottom: 25px;
     width: 100%;
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: Mega Sans S;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
+    font-weight: 400;
     line-height: 140%;
     text-align: center;
     text-transform: uppercase;
-    color: #3A3A3A;
+    color: #FFF;
 }
 .next{
-    background: #7A3BA4;
+    background: #C2F09C;
     border-radius: 30px;
     border: 0;
     width: 150px;
     height: 54px;
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: SBS-B;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 114.4%;
     text-align: center;
     text-transform: uppercase;  
-    color: #FFFFFF;
+    color: #6933B0;
     transition: 0.3s;  
 }
 .next:hover{
-    background-color: #984acc;
+
 }
 .prev:hover{
-    background-color: #984acc;
+  
 }
 .prev{
-    font-family: 'Noto Sans Display', sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    color: #EDCFFC;
+    text-align: center;
+    font-family: Mega Sans S;
     font-size: 20px;
-    line-height: 114.4%;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #7A3BA4;
+    background: #EDCFFC;
     border: 0;
     border-radius: 30px;
     width: 150px;
     height: 54px;
 }
-.prev:disabled{
+.prev:disabled, .next:disabled{
     opacity: 0.2;
 }
 .number-answer{
-margin: 0;
+    margin: 0;
 }
 .answer{
-margin: 20px 0px 0px 0px ;
+    margin: 20px 0px 0px 0px ;
+    color: #6933B0;
+    font-family: Mega Sans Beta;
+    font-size: 28px;
 }
 .dots{
     display: flex;
     justify-content: center;
 }
 .dots-purple{
-    background: #7A3BA4;
+    background: white;
     opacity: 0.2;
     width: 15px;
     height: 15px;
@@ -217,11 +273,10 @@ margin: 20px 0px 0px 0px ;
     margin: 5px;
 }
 .number-answer{
-    font-family: 'Noto Sans Display', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 114.4%;
+    color: #6933B0;
+    font-family: Mega Sans Beta;
+    font-size: 20px;
+    margin-bottom: 135px;
     text-transform: uppercase; 
     color: #3A3A3A;
     transition: 0.5s;
@@ -230,16 +285,15 @@ margin: 20px 0px 0px 0px ;
     opacity: 1;
 }
 .number-question{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: Mega Sans S;
     font-style: normal;
-    font-weight: 750;
+    font-weight: 400;
     font-size: 48px;
     line-height: 140%;
     text-align: center;
     text-transform: uppercase;
-    color: #7A3BA4;
-    opacity: 0.3;
-    margin: 50px 0px 20px 0px;
+    color: #C2F09C;
+    margin: 100px 0px 13px 0px;
 }
 .title-and-number{
     width: 100%;
@@ -252,29 +306,32 @@ margin: 20px 0px 0px 0px ;
     flex-direction: column;
     align-items: center;
 }
+.position{
+    position: sticky;
+}
 .skin-type-title{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: Mega Sans S;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 32px;
     line-height: 140%;
     text-align: center;
     text-transform: uppercase;
-    color: #3A3A3A;
-    margin: 130px 0px 0px 0px ;
+    color: #fff;
+    margin: 100px 0px 22px 0px ;
 }
 .skin-type-sub-title{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: Mega Sans Beta;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     text-align: center;
-    color: #3A3A3A;   
+    color: #FFF;
     max-width: 750px; 
 }
 .skin-care-title{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: SBS-B;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -285,7 +342,7 @@ margin: 20px 0px 0px 0px ;
     margin: 30px 0px 0px 0px ;
 }
 .skin-care-sub-title{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: SBS-R;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -295,7 +352,7 @@ margin: 20px 0px 0px 0px ;
     max-width: 775px;
 }
 .danger{  
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: SBS-R;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -309,16 +366,89 @@ margin: 20px 0px 0px 0px ;
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin: 70px 0px 0px 0px ;
+    margin: 40px 0px 0px 0px ;
+}
+.galary-item{
+    padding: 66px 18px 20px 19px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galary-item img {
+    transition: .2s;
+    max-width: 263px;
+    margin-bottom: 46px;
+}
+.galary-item:hover > img {
+    object-fit: cover;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
 }
 .galary-item-text{
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: SBS-R;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #3A3A3A;
     margin: 12px 0px 0px 0px ;
+}
+.end-button{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 58px;
+}
+.testRepeat {
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #9B6DD6;
+    padding: 15px 0px;
+    width: 300px;
+    text-decoration: none;
+    transition: .5s;
+    color: #EDCFFC;
+    text-align: center;
+    font-family: Mega Sans S;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+.promo-button{
+    width: 300px;
+    color: #6933B0;
+    text-align: center;
+    font-family: Mega Sans S;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 15px 0px;
+    border-radius: 30px;
+    background: #C2F09C;
+    text-transform: uppercase;
+}
+a.testRepeat:hover, .button-main:hover {
+    background: #7A3BA4;
+    color: #FFF;
+}
+.circleText {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    animation: circleText 45s linear infinite;
+}
+@keyframes circleText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 @media  screen and (max-width:1910px) {
     .btns{
@@ -347,7 +477,7 @@ margin: 20px 0px 0px 0px ;
 }
 @media screen and (max-width:1024px){
     .background{
-        background: url(./image/backgroind700px.png);
+        background-color: #8654CC;
         background-size: cover ;
         height: 100%;
         width: 100%;
@@ -426,6 +556,9 @@ margin: 20px 0px 0px 0px ;
         width: 320px;
         margin-top: 20px;
     }
+    .circleText {
+        display: none;
+    }
     
 }
 @media screen and (max-width:450px){
@@ -436,7 +569,7 @@ margin: 20px 0px 0px 0px ;
         font-size: 20px;
     }
     .question-center{
-        font-size:20px ;
+        font-size:14px ;
     }
     .next{
         width: 100px;

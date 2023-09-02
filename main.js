@@ -3,93 +3,163 @@
 const questions = [
 	//1
 	{
-		question: " Как реагирует кожа лица на умывание привычным очищающим средством?",
+		question: "Где вы предпочитаете бегать?",
 		answers: [
-			"Появляется ощущение стянутости, хочется нанести увлажняющий крем, чтобы успокоить и устранить дискомфорт.",
-			"Дискомфорт не ощущается, кожа матовая, без шелушения или блеска.",
-			"После умывания кожа быстро становится жирной, появляется блеск на всей поверхности лица. ", 
-			"В течение часа после умывания появляется незначительный блеск в Т-зоне. Чувства стянутости не ощущается, хотя щеки остаются сухими. "
+			"На беговой дорожке в зале ",
+			"По асфальту и другим твердым покрытиям",
+			"По грунтовым дорожкам парка или лесным тропам ", 
+			
 		],
+		image:[
+			"./image/gantel.png",
+			"./image/boll.png",
+			"",
+			"./image/botel.png"
+		]
 	},
 	//2
 	{
-		question: "Что происходит с вашей кожей, если вовремя ее не увлажнить?",
+		question: "Вы будете использовать кроссовки только как беговые? или также для других задач?",
 		answers: [
-			"Становится сухой и стянутой.",
-			"Отлично себя чувствует без увлажнения.",
-			"Без увлажняющей косметики блестят  только проблемные зоны – подбородок, нос, лоб.", 
-			"Без увлажнения кожа быстро становится жирной."
+			"Бег и пешие прогулки",
+			"Бег и фитнес",
+			"Только бег", 
+			
 		],
+		image:[
+			"./image/watch.png",
+			"./image/box.png",
+			"",
+			"./image/pods.png"
+		]
 	},
 	//3
 	{
-		question: "Как выглядит ваш макияж спустя 2-3 часа после нанесения тональной основы?",
+		question: "Какой стиль бега вы предпочитаете?",
 		answers: [
-			"Выглядит высохшим, подчеркиваются шелушения.",
-			"Тональная основа остается без изменений.",
-			"Макияж быстро размазывается, сквозь тон виден жирный блеск.", 
-			"Макияж в нормальном состоянии, но местами может быть виден жирный блеск."
+			"Бег трусцой",
+			"Бег на средние дистанции",
+			"Бег на длинные дистанции", 
+			
 		],
+		image:[
+			"./image/boll.png",
+			"./image/box.png",
+			"./image/skakalka.png",
+			"./image/pods.png"
+		]
 	},
 	//4
 	{
-		question: "Как выглядят поры на вашем лице?",
+		question: "Для каких задач вы выбираете кроссовки?",
 		answers: [
-			"Поры практически незаметны.",
-			"На отдельных участках лица есть мелкие поры.",
-			"Очень много крупных пор, особенно в области носа и лба.", 
-			"Крупные поры хорошо видны в проблемных зонах."
+			"Для легких тренировок",
+			"Для соревнований",
+			"Для длительных пробежек", 
+			
 		],
+		image:[
+			"./image/botel.png",
+			"./image/gantel.png",
+			"",
+			"./image/skakalka.png"
+		]
 	},
 	//5
 	{
-		question: "Как часто на лице появляются высыпания?",
+		question: "Как часто вы занимаетесь?",
 		answers: [
-			"Очень редко.",
-			"Редко, не чаще одного раза в месяц.",
-			"Постоянно появляются высыпания, комедоны и прочие несовершенства.", 
-			"Высыпания появляются иногда."
+			"Бегаю 1-2 раза в неделю",
+			"Бегаю 3 раза в неделю",
+			"Бегаю каждый день", 
+			
 		],
+		image:[
+			"./image/pods.png",
+			"./image/watch.png",
+			"",
+			"./image/botel.png"
+		]
 	},
 	//6
 	{
-		question: "Как ваша кожа реагирует на влияние внешних факторов (климат, неправильное питание, жаркая погода)?",
+		question: "В какую погоду будете бегать?",
 		answers: [
-			"Нет связи между этими факторами и состоянием кожи.",
-			"Появляются ощущения сухости, раздражения, иногда даже зуд.",
-			"Обостряется акне, лицо становится более сальным.", 
-			"Появляются высыпания на лице."
+			"Лето",
+			"Весна",
+			"Осень/зима", 
+			
 		],
+		image:[
+			"./image/boll.png",
+			"./image/skakalka.png",
+			"",
+			"./image/gantel.png"
+		]
 	},
 	//7
 	{
-		question: "Как часто на вашем лице появляются комедоны?",
+		question: "В какой обуви вам удобнее бегать?",
 		answers: [
-			"Комедоны не появляются.",
-			"Появляются очень редко.",
-			"Постоянно приходится бороться с комедонами.", 
-			"Комедоны есть, но их мало – в основном на носу и возле него."
+			"Без разницы, самое главное, чтобы обувь была красивой",
+			"В мягкой",
+			"В той, которая крепко удерживает стопу", 
+			
 		],
+		image:[
+			"./image/gantel.png",
+			"./image/boll.png",
+			"",
+			"./image/botel.png"
+		]
 	},
 	//8
 	{
-		question: "Какой становится ваша кожа спустя 2-3 часа после нанесения увлажняющего средства?",
+		question: "В каком темпе вы чаще всего бегаете?",
 		answers: [
-			"Средство впитывается очень быстро, спустя время кожа снова выглядит сухой.",
-			"Кожа в идеальном состоянии – гладкая и мягкая.",
-			"На коже появляется заметный жирный блеск.", 
-			"На лице можно заметить незначительный блеск."
+			"6 мин/км и медленнее",
+			"быстрее 4,5 мин/км",
+			"6-4,5 мин/км", 
+			
 		],
+		image:[
+			"./image/watch.png",
+			"./image/box.png",
+			"",
+			"./image/pods.png"
+		]
 	},
 	//9
 	{
-		question: " Как выглядит ваше лицо в Т-зоне?",
+		question: " Как вы обычно ставите ногу во время приземления на поверхность?",
 		answers: [
-			"Не замечаю блеска на данном участке.",
-			"Кожа блестит только в жару.",
-			"Блеск появляется очень быстро.", 
-			"Есть заметный небольшой блеск."
+			"Приземляюсь на носок",
+			"Приземляюсь на пятку",
+			"Опускаю носок и пятку одновременно", 
+			
 		],
+		image:[
+			"./image/botel.png",
+			"./image/gantel.png",
+			"./image/boll.png",
+			"./image/skakalka.png"
+		]
+	},
+	//10
+	{
+		question: " Какой у вас подъем?",
+		answers: [
+			"Нормальный",
+			"Высокий",
+			"Низкий", 
+			
+		],
+		image:[
+			"./image/botel.png",
+			"./image/gantel.png",
+			"",
+			"./image/skakalka.png"
+		]
 	},
 
 ];
@@ -104,7 +174,11 @@ const quizDiv     = document.querySelector(".quiz");
 const btns        = document.querySelector(".btns");
 const dots        = document.querySelectorAll(".dots-purple")
 let lastLevel     = 0;
-let indexQuestion = 1
+let indexQuestion = 1;
+let prevButton = document.querySelector(".prev");
+let nextButton = document.querySelector(".next");
+nextButton.disabled = true
+prevButton.disabled = true
 
 
 let finalAnswers = [];
@@ -112,8 +186,12 @@ let finalAnswers = [];
 const showQuestion = (index) => {
   const question = document.createElement("div");
 
-  question.innerHTML = `<h1 class="number-question">№ ${indexQuestion}.</h1> 
+  question.innerHTML = `<h1 class="number-question"> 0${indexQuestion}</h1> 
   						<h1 class="question-center">${questions[index].question}</h1>
+						<img class="index-element-1 index-element" src="${questions[index].image[0]}" alt="">
+						<img class="index-element-2 index-element" src="${questions[index].image[1]}" alt="">
+						<img class="index-element-3 index-element" src="${questions[index].image[2]}" alt="">
+						<img class="index-element-4 index-element" src="${questions[index].image[3]}" alt="">
 						`;
   question.classList.add('title-and-number');
 
@@ -121,10 +199,11 @@ const showQuestion = (index) => {
     
 	
 	const answer = document.createElement("div");
-    answer.innerHTML = `<p class="number-answer ">${index +1}.</p>
-					    <p class="answer">${el}</p>`;
+    answer.innerHTML = `<p class="number-answer" data-value="${index + 1}">${index +1}.</p>
+					    <p class="answer" data-value="${index + 1}">${el}</p>`;
 	
 	answer.classList.add('quiz-card')
+	answer.dataset.value = index + 1
     return answer;
 	
 	
@@ -132,10 +211,7 @@ const showQuestion = (index) => {
 
   answers.forEach( (answer) =>{
 	answer.addEventListener('click', function (event) {
-		finalAnswers[index] = event.target.querySelector('.number-answer').innerText;
-		
-
-		
+		finalAnswers[index] = event.target.dataset.value;
 	});
   });
   
@@ -148,85 +224,79 @@ const showQuestion = (index) => {
 
   answers.forEach((answer) => {
     answer.addEventListener("click", (event) => {
+		nextButton.disabled = false
 		answers.forEach((removeClass) => {
 			removeClass.classList.remove('active');
 		});
-      finalAnswers[index] = event.target.innerText;
 	  answer.classList.add('active')
-      console.log(finalAnswers);
     });
   });
-
-  
-
 };
  
 
 const start = () => {
-  let score = [];
   let questionIndex = 0;
-  let divBtns    = document.querySelector(".btns")
-  let prevButton = document.querySelector(".prev");
-  let nextButton = document.querySelector(".next");
-  let test       = document.querySelector("#test");
- 
+  let divBtns    = document.querySelector(".btns");
 
-
-
-
-
-
-
-  function occurrence(){
-	return finalAnswers.sort((a,b) => 
-	finalAnswers.filter(v => v===a).length - finalAnswers.filter(v => v===b).length
-	).pop();
- }
-
-  nextButton.addEventListener("click", (event) => {
-	
-    if (!finalAnswers[questionIndex]) return;
+  function findMostFrequent() {
+	const freq = {};
+	let maxFreq = 0;
+	let maxNum;
+  
+	for (const num of finalAnswers) {
+	  freq[num] = (freq[num] || 0) + 1;
+	  if (freq[num] > maxFreq) {
+		maxFreq = freq[num];
+		maxNum = num;
+	  }
+	}
+	return maxNum;
+  }
+ nextButton.addEventListener("click", (event) => {
+	findMostFrequent()
+	nextButton.disabled = true
+	prevButton.disabled = false
+	dots.forEach(element => {
+		element.classList.remove('active-dots')
+	});
 	if(indexQuestion == questions.length ){
-		switch (occurrence()){
-			case 1:
-				console.log('1');
-			case 2:
-				console.log('2');
-			case 3:
-				console.log('3');
-			case 4:
-				console.log('4');		
-		}
+		let maxNum = findMostFrequent()
 		btns.innerHTML = ``;
+		let test       = document.querySelector(".respons-output[data-score='" + maxNum + "']");;
+		console.log(test)
 		test.classList.remove('disabled');
 		divBtns.classList.remove('btns');
+		ym(93050216,'reachGoal','finalQuestion');
 	}
-	console.log('+')
 	quizDiv.innerHTML = ``;
 	indexQuestion++;
     showQuestion(++questionIndex);
 
-		if(dots[index +1] = indexQuestion){
-			dots.classList.add('active-dots')
-		}
+	dots[indexQuestion - 1].classList.add('active-dots')
 
   });
   
   
   prevButton.addEventListener("click", (e) => {
-	
-	if(questionIndex > 0){
+	console.log(questionIndex)
+	dots.forEach(element => {
+		element.classList.remove('active-dots')
+	});
+	finalAnswers.pop()
+	if(questionIndex > 1){
 		prevButton.disabled = false;
-		console.log('-')
 		indexQuestion--;
+		dots[indexQuestion - 1].classList.add('active-dots')
 		quizDiv.innerHTML = ``;
 		showQuestion(--questionIndex)
 	}else{
-		prevButton.disabled = true
+		prevButton.disabled = true;
+		indexQuestion--;
+		dots[indexQuestion - 1].classList.add('active-dots')
+		quizDiv.innerHTML = ``;
+		showQuestion(--questionIndex)
 	}
 
-	
-	
   });
   
   showQuestion(questionIndex);
@@ -235,4 +305,4 @@ const start = () => {
 start();
 
 
-console.log(dots.length)
+// console.log(dots.length)
