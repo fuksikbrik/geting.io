@@ -180,8 +180,8 @@ a {
 }
 
 .quiz-card{
-    max-width: 300px;
-    width: -webkit-fill-available;
+    
+    width: 25.8%;
     height: 359px;
     border: 1px solid #000000;
     border-radius: 30px;
