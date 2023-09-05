@@ -169,7 +169,7 @@ a {
     right: 5%;
 }
 .quiz-wrapper{
-    max-width: 1160px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -182,7 +182,7 @@ a {
 }
 
 .quiz-card{
-    width: 25.8%;
+    width: 318px;
     height: 359px;
     border-radius: 30px;
     padding: 39px 25px 0px 30px;
