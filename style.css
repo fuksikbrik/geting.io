@@ -241,7 +241,8 @@ a {
 .question-center{
     text-align: center;
     margin-bottom: 25px;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     font-family: Mega Sans S;
     font-size: 36px;
     font-style: normal;
@@ -866,7 +867,8 @@ a.testRepeat:hover, .button-main:hover {
     }
     .quiz-element-4{
         right: -4%;
-        bottom: 26%;
+        bottom: 16%;
+        max-width: 90px;
     }
     .end-element-1{
         left: 0;
