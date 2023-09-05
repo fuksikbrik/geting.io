@@ -740,6 +740,10 @@ a.testRepeat:hover, .button-main:hover {
     .quiz-card{
         width: 25.5%;
     }
+    .prev:hover {
+        background: #9B6DD6;
+        color: #6933B0;
+    }
 }
 @media screen and (max-width:700px) {
     .quiz-wrapper{
@@ -797,16 +801,6 @@ a.testRepeat:hover, .button-main:hover {
     }
     .index-footer-text > img{
         width: 45%;
-    }
-    
-    .prev{
-        color:#fff !important;
-        background: rgba( #EDCFFC,  #EDCFFC #EDCFFC, 0.20) ;
-    }
-    @media (hover: hover) {
-        .prev:hover{
-            background: rgba( #EDCFFC,  #EDCFFC #EDCFFC, 0.20) !important ;
-        }
     }
 }
 
