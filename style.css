@@ -742,7 +742,7 @@ a.testRepeat:hover, .button-main:hover {
     }
     .prev:hover {
         background: #9B6DD6;
-        color: #6933B0;
+        color: white;
     }
 }
 @media screen and (max-width:700px) {
