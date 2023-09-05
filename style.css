@@ -741,7 +741,7 @@ a.testRepeat:hover, .button-main:hover {
         width: 25.5%;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:700px) {
     .quiz-wrapper{
         display: flex;
         flex-direction: column;
@@ -798,29 +798,16 @@ a.testRepeat:hover, .button-main:hover {
     .index-footer-text > img{
         width: 45%;
     }
-    .prev:hover{
-        background-color: none;
-        color: none;
-    }
+    
     .prev{
-        color:#6933B0;
-        background-color: white;
+        color:#fff !important;
+        background: rgba( #EDCFFC,  #EDCFFC #EDCFFC, 0.20) ;
     }
-   
-    /* @media (hover: hover){
+    @media (hover: hover) {
         .prev:hover{
-            background: none;
-            color: #6933B0;
+            background: rgba( #EDCFFC,  #EDCFFC #EDCFFC, 0.20) !important ;
         }
-    } 
-    @media (hover: none){
-        .prev:active{
-            background: none;
-            color: #6933B0;
-        }
-    } */
-    
-    
+    }
 }
 
 @media screen and (max-width:450px){
