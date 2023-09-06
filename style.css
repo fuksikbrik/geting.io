@@ -898,6 +898,7 @@ a.testRepeat:hover, .button-main:hover {
         left: -4%;
         bottom: 16%;
         z-index: 1;
+        max-width: 100px;
     }
     .btns {
         
