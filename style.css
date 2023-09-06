@@ -898,7 +898,7 @@ a.testRepeat:hover, .button-main:hover {
         left: -4%;
         bottom: 16%;
         z-index: 1;
-        max-width: 100px;
+        max-width: 90px;
     }
     .btns {
         
@@ -926,10 +926,12 @@ a.testRepeat:hover, .button-main:hover {
         left: -2%;
         bottom: 1%;
         z-index: 1;
+        max-width: 90px;
     }
     .end-element-4{
         right: -4%;
         bottom: 1%;
+        max-width: 90px;
     }
     .number-question{
         margin-top: 55px;
