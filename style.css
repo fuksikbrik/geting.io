@@ -869,7 +869,11 @@ a.testRepeat:hover, .button-main:hover {
         left: -4%;
         bottom: 16%;
         z-index: 1;
-        max-width: 90px;
+        max-width: 70px;
+    }
+    .btns {
+        
+        margin: 20px 0px 150px 0px;
     }
     .quiz-element-4{
         right: -4%;
