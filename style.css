@@ -750,6 +750,9 @@ a.testRepeat:hover, .button-main:hover {
         display: flex;
         flex-direction: column;
     }
+    .footer-logo{
+        max-width: 137px;
+    }
     
     .quiz-card{
         width: 100%;
