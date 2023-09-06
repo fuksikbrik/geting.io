@@ -754,7 +754,7 @@ a.testRepeat:hover, .button-main:hover {
         max-width: 137px;
     }
     .index-logo {
-        margin: 250px 0px 20px 0px;
+        margin: 210px 0px 20px 0px;
     }
     
     .quiz-card{
@@ -808,6 +808,7 @@ a.testRepeat:hover, .button-main:hover {
     .index-footer-text > img{
         width: 45%;
     }
+    
 }
 
 @media screen and (max-width:450px){
@@ -861,8 +862,27 @@ a.testRepeat:hover, .button-main:hover {
         z-index: 2;
         position: sticky;
     }
-    .index-element{
+    /* .index-element{
         max-width: 100px;
+    } */
+    .button-main {
+        margin: 28px 0px 200px 0px;
+    }
+    .index-element-1 {
+        left: -2%;
+        max-width: 135px;
+        top: 5%;
+    }
+    .index-element-2 {
+        right: -3%;
+        top: 6%;
+        max-width: 135px;
+    }
+    .index-element-3 {
+        max-width: 110px;
+    }
+    .index-element-4 {
+        max-width: 110px;
     }
     .quiz-element-1{
         left: -6%;
