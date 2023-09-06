@@ -859,11 +859,14 @@ a.testRepeat:hover, .button-main:hover {
         max-width: 100px;
     }
     .quiz-element-1{
-        left: 0;       
+        left: -6%;
+        max-width: 90px;
+
     }
     .quiz-element-2{
         right: -10%;
         top: 3%;
+        max-width: 90px;
     }
     .quiz-element-3{
         left: -4%;
