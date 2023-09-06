@@ -40,7 +40,7 @@ a {
 }
 .index-element{
     position: absolute;
-    max-width: 169px;
+    max-width: 160px;
     animation: animation 3s infinite none;
 }
 @keyframes animation  {
