@@ -883,12 +883,17 @@ a.testRepeat:hover, .button-main:hover {
         max-width: 90px;
     }
     .end-element-1{
-        left: 0;
-        top: 1%;       
+        left: -4%;
+        top: 1%; 
+        max-width: 70px;      
     }
     .end-element-2{
-        right: -10%;
-        top: 3%;
+        right: -5%;
+        top: 1%;
+        max-width: 70px;   
+    }
+    .skin-type-title{
+        width: 80%;
     }
     .end-element-3{
         left: -2%;
