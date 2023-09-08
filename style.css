@@ -983,7 +983,7 @@ a.testRepeat:hover, .button-main:hover {
         max-width: 100px;
     } */
     .button-main {
-        margin: 16px 0px 142px 0px;
+        margin: 16px 0px 112px 0px;
     }
     .index-element-1 {
         left: -2%;
@@ -1107,7 +1107,7 @@ a.testRepeat:hover, .button-main:hover {
     }
     .index-logo {
         width: 75%;
-        margin: 180px 0px 20px 0px
+        margin: 150px 0px 20px 0px
     }
 }
 @media screen and (max-width:376px){
