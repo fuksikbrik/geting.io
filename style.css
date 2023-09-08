@@ -983,24 +983,25 @@ a.testRepeat:hover, .button-main:hover {
         max-width: 100px;
     } */
     .button-main {
-        margin: 16px 0px 132px 0px;
+        margin: 16px 0px 142px 0px;
     }
     .index-element-1 {
         left: -2%;
         max-width: 135px;
-        top: 5%;
+        top: 1%;
     }
     .index-element-2 {
         right: -3%;
-        top: 6%;
+        top: 3%;
         max-width: 135px;
     }
     .index-element-3 {
         max-width: 100px;
-        bottom: 14%;
+        bottom: 22%;
     }
     .index-element-4 {
         max-width: 100px;
+        bottom: 20%;
     }
     .quiz-element-1{
         left: -6%;
@@ -1103,6 +1104,10 @@ a.testRepeat:hover, .button-main:hover {
     }
     .gallery-sneakers .gallery-sneakers-item {
         width: 28%;
+    }
+    .index-logo {
+        width: 75%;
+        margin: 180px 0px 20px 0px
     }
 }
 @media screen and (max-width:376px){
