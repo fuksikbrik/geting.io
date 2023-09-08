@@ -195,6 +195,7 @@ let finalAnswers = [];
 const showQuestion = (index) => {
   const question = document.createElement("div");
 
+
   question.innerHTML = `<div class="svg-quiz"><img  src="./image/svg-quiz.svg" alt=""></div>
   						<h1 class="number-question"> ${questions[index].numberQuestion}</h1> 
   						<h1 class="question-center">${questions[index].question}</h1>
@@ -264,6 +265,7 @@ const start = () => {
   }
  nextButton.addEventListener("click", (event) => {
 	findMostFrequent()
+	let errorBlock
 	nextButton.disabled = true
 	prevButton.disabled = false
 	dots.forEach(element => {
