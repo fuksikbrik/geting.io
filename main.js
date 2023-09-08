@@ -72,7 +72,7 @@ const questions = [
 	//5
 	{
 		numberQuestion:'05',
-		question: "Для каких задач вы&nbsp;выбираете кроссовки?",
+		question: "Как часто вы&nbsp;занимаетесь?",
 		answers: [
 			"Бегаю 1-2 раза в&nbsp;неделю",
 			"Бегаю 3&nbsp;раза в&nbsp;неделю",

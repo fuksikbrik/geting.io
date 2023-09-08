@@ -934,7 +934,7 @@ a.testRepeat:hover, .button-main:hover {
     }
     .question-center{
         font-size:16px ;
-        width: 100%;
+        width: 85%;
     }
     .end-button {
         margin-bottom: 60px;
@@ -1112,9 +1112,16 @@ a.testRepeat:hover, .button-main:hover {
 }
 @media screen and (max-width:376px){
     .index-element-3 {
-        bottom: 18%;
+        bottom: 20%;
     }
     .index-element-4 {
-        bottom: 18%;
+        bottom: 20%;
+    }
+    .button-main {
+        margin: 16px 0px 122px 0px;
+    }
+    .question-center{
+        font-size:16px ;
+        width: 100%;
     }
 }
