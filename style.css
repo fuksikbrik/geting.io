@@ -748,9 +748,8 @@ a.testRepeat:hover, .button-main:hover {
 @media screen and (max-width:1024px){
     .background{
         background-color: #8654CC;
-        height: 100vh;
+        height: 100%;
         width: 100%;
-        overflow: hidden;
     }
     .quiz-card{
         height: 219px;
