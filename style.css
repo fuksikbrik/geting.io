@@ -967,7 +967,7 @@ a.testRepeat:hover, .button-main:hover {
     }
     .question-center{
         font-size:16px ;
-        width: 85%;
+        width: 100%;
     }
     .end-button {
         margin-bottom: 60px;
@@ -1005,7 +1005,7 @@ a.testRepeat:hover, .button-main:hover {
         width: 100%;
         max-width: 100%;
         padding: 18px;
-        height: 98px;
+        height: 91px;
         z-index: 2;
     }
     .btns{
