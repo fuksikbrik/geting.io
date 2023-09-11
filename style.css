@@ -1031,11 +1031,11 @@ a.testRepeat:hover, .button-main:hover {
     }
     .index-element-3 {
         max-width: 100px;
-        bottom: 22%;
+        bottom: 12%;
     }
     .index-element-4 {
         max-width: 100px;
-        bottom: 20%;
+        bottom: 11%;
     }
     .quiz-element-1{
         left: -6%;
@@ -1058,7 +1058,7 @@ a.testRepeat:hover, .button-main:hover {
         margin: 19px 0px 160px 0px;
     }
     .index-footer-text {
-        margin-bottom: 80px;
+        margin-bottom: 10px;
     }
     .quiz-element-4{
         right: -4%;
