@@ -621,7 +621,7 @@ a.testRepeat:hover, .button-main:hover {
         margin-bottom: 55px;
     }
     .quiz-card {
-        height: 223px;
+        height: 213px;
     }
 }
 @media screen and (max-width:1500px) {
