@@ -722,9 +722,6 @@ a.testRepeat:hover, .button-main:hover {
         width: 236px;
         height: 200px;
     }
-    .galary-item{
-        
-    }
     .galary-item > img{
         width: 100%;
     }
@@ -1005,7 +1002,7 @@ a.testRepeat:hover, .button-main:hover {
         width: 100%;
         max-width: 100%;
         padding: 18px;
-        height: 91px;
+        height: 87px;
         z-index: 2;
     }
     .btns{
@@ -1140,15 +1137,30 @@ a.testRepeat:hover, .button-main:hover {
     }
     .index-logo {
         width: 75%;
-        margin: 150px 0px 20px 0px
+        margin: 140px 0px 20px 0px
     }
 }
 @media screen and (max-width:376px){
     .index-element-3 {
-        bottom: 20%;
+        bottom: 13%;
     }
     .index-element-4 {
-        bottom: 20%;
+        bottom: 12%;
+    }
+    .quiz-element-3{
+        bottom: 9%;
+    }
+    .quiz-element-4{
+        bottom: 9%;
+    }
+    .end-element-3{
+        bottom: 7%;
+    }
+    .end-element-4{
+        bottom: 7%;
+    }
+    .index-footer-text{
+        margin-top: 66px;
     }
     .button-main {
         margin: 16px 0px 122px 0px;
