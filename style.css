@@ -236,6 +236,7 @@ a {
     width: 100%;
     margin: 34px 0px 66px 0px;
     position: sticky;
+    z-index: 2;
    
 }
 .question-center{
