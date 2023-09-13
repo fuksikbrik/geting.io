@@ -329,6 +329,13 @@ closeBtn.addEventListener('click', function () {
 	modalWindow.classList.remove('active-modal')
 })
 
+let myFunction = () => {
+	navigator.clipboard.writeText("konda");
+	
+	console.log('click')
+
+}
+
 
 
 // console.log(dots.length)
