@@ -517,6 +517,7 @@ a {
     background: #C2F09C;
     text-transform: uppercase;
     transition: .6s;
+    border: none;
 }
 .promo-button:hover{
     background: #FFF;
