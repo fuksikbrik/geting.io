@@ -1051,7 +1051,7 @@ a.testRepeat:hover, .button-main:hover {
         width: 100%;
     }
     .end-button {
-        margin-bottom: 60px;
+        margin-bottom: 120px;
     }
     .image-gallary{
         gap: 14px;
@@ -1142,8 +1142,11 @@ a.testRepeat:hover, .button-main:hover {
     }
     .quiz-element-4{
         right: -4%;
-        bottom: 16%;
+        bottom: 10%;
         max-width: 90px;
+    }
+    .quiz-element-3{
+        bottom: 10%;
     }
     .end-element-1{
         left: -4%;
@@ -1160,13 +1163,13 @@ a.testRepeat:hover, .button-main:hover {
     }
     .end-element-3{
         left: -2%;
-        bottom: 1%;
+        bottom: 7%;
         z-index: 1;
         max-width: 90px;
     }
     .end-element-4{
         right: -4%;
-        bottom: 1%;
+        bottom: 7%;
         max-width: 90px;
     }
     .number-question{
@@ -1241,6 +1244,12 @@ a.testRepeat:hover, .button-main:hover {
     .index-element-3 {
         bottom: 13%;
     }
+    .end-button {
+        margin-bottom: 50px;
+    }
+    .btns {
+        margin: 19px 0px 110px 0px;
+    }
     .index-element-4 {
         bottom: 12%;
     }
@@ -1263,7 +1272,7 @@ a.testRepeat:hover, .button-main:hover {
         margin: 16px 0px 122px 0px;
     }
     .question-center{
-        font-size:16px ;
+        font-size:14px ;
         width: 100%;
     }
     .modal-btn{
@@ -1272,5 +1281,19 @@ a.testRepeat:hover, .button-main:hover {
     .modal-sub-title{
         width: 100%;
         font-size: 16px;
+    }
+}
+@media screen and (max-width:341px) {
+    .galary-item-title{
+        font-size: 18px;
+    }
+    .galary-item-sub-title{
+        font-size: 14px;
+    }
+    .galary-item > img{
+        width: 110px;
+    }
+    .galary-item{
+        gap: 15px;
     }
 }
