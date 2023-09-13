@@ -317,4 +317,18 @@ const start = () => {
 start();
 
 
+const promoBtns = document.querySelectorAll('.promo-button')
+const modalWindow = document.querySelector('.modal-window')
+const closeBtn = document.querySelector('.button-close')
+promoBtns.forEach(item => {
+	item.addEventListener('click', function () {
+		modalWindow.classList.add('active-modal')
+	})
+})
+closeBtn.addEventListener('click', function () {
+	modalWindow.classList.remove('active-modal')
+})
+
+
+
 // console.log(dots.length)
