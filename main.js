@@ -332,7 +332,6 @@ let allertMessage = document.querySelector('.alert-message')
 let myFunction = () => {
 	navigator.clipboard.writeText("konda");
 	allertMessage.classList.add('active-message')
-	modalTitle.classList.add('active-title')
 	setTimeout(() => allertMessage.classList.remove('active-message'), 3000)
 	console.log('click')
 }

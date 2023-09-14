@@ -540,7 +540,7 @@ a {
     transition: .6s;
 }
 .site:hover{
-    background: #FFF;
+        background: #FFF;
 }
 a.testRepeat:hover, .button-main:hover {
     color: #6933B0;
@@ -566,7 +566,7 @@ a.testRepeat:hover, .button-main:hover {
     z-index: 9999;
     overflow: hidden;
     width: 636px;
-    margin: 12% auto;
+    margin: 10% auto;
 }
 .modal-title{
     color: #7A3BA4;
@@ -609,7 +609,7 @@ a.testRepeat:hover, .button-main:hover {
 .modal-btn:hover{
     background: #9B6DD6;
     color: white;
-    border: none;
+    border: 1px solid  #9B6DD6;
 }
 .modal-sub-title-number{
     color: #7A3BA4;
@@ -761,6 +761,9 @@ a.testRepeat:hover, .button-main:hover {
     }
     .quiz-card {
         height: 213px;
+    }
+    .modal-window-content{
+        margin: 9% auto;
     }
 }
 @media screen and (max-width:1367px) {
@@ -1043,7 +1046,7 @@ a.testRepeat:hover, .button-main:hover {
     }
     .btns{
         position: sticky;
-        margin: 20px 0px 120px 0px;
+        margin: 20px 0px 200px 0px;
     }
     .prev{
         height: 50px;
@@ -1061,6 +1064,9 @@ a.testRepeat:hover, .button-main:hover {
     }
     .index-footer-text > img{
         width: 45%;
+    }
+    .index-footer-text{
+        margin-bottom: 0;
     }
     
 }
@@ -1253,7 +1259,7 @@ a.testRepeat:hover, .button-main:hover {
     }
     .index-footer-text{
         position: inherit;
-        margin-left: 0;
+        margin-left: 0px;
         left: 0;
         bottom: 0;
     }
@@ -1278,7 +1284,8 @@ a.testRepeat:hover, .button-main:hover {
         font-size: 40px;
     }
     .modal-window-content{
-        margin: 60% 16px;
+        margin: 45% 16px;
+        
     }
     .alert-message{
         padding: 4px 14px;
