@@ -115,6 +115,7 @@ a {
     align-items: center;
     gap: 12px;
     margin-bottom: 50px;
+    z-index: 1;
 }
 .index-footer-text-title{
     color: #FFF;
@@ -579,8 +580,6 @@ a.testRepeat:hover, .button-main:hover {
     width: 100%;
     margin-top: 53px;
     transition: 0.5s;
-}
-.active-title{
     background: #EDCFFC;
 }
 .modal-sub-title{
@@ -622,6 +621,7 @@ a.testRepeat:hover, .button-main:hover {
 }
 .active-modal{
     display: block !important;
+    z-index: 2;
 }
 .alert-message{
     display: flex;
@@ -1280,6 +1280,19 @@ a.testRepeat:hover, .button-main:hover {
     .modal-window-content{
         margin: 60% 16px;
     }
+    .alert-message{
+        padding: 4px 14px;
+    }
+    .alert-message > p{
+        font-size: 14px;
+    }
+    .modal-window-content{
+        padding: 50px 20px 37px 20px;
+    }
+    .you-promo{
+        font-size: 24px;
+    }
+
 }
 @media screen and (max-width:376px){
     .index-element-3 {
