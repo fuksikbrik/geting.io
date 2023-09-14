@@ -563,7 +563,7 @@ a.testRepeat:hover, .button-main:hover {
     height: fit-content;
     position: sticky; 
     z-index: 9999;
-    
+    overflow: hidden;
     width: 636px;
     margin: 16% auto;
 }
@@ -574,6 +574,14 @@ a.testRepeat:hover, .button-main:hover {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 16px;
+    padding: 12px 0px;
+    position: absolute;
+    width: 100%;
+    margin-top: 53px;
+    transition: 0.5s;
+}
+.active-title{
+    background: #EDCFFC;
 }
 .modal-sub-title{
     color: #666;
@@ -614,6 +622,38 @@ a.testRepeat:hover, .button-main:hover {
 }
 .active-modal{
     display: block !important;
+}
+.alert-message{
+    display: flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: #7A3BA4;
+    position: absolute;
+    bottom: -40px;
+    transition: .6s;
+}
+.active-message{
+    bottom: 0;
+}
+.alert-message > p{
+    color: #FFF;
+    text-align: center;
+    font-family: Mega Sans Beta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.you-promo{
+    color: #3A3A3A;
+    text-align: center;
+    font-family: Mega Sans Beta;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 114px;
 }
 @media  screen and (max-width:1910px) {
     .btns{

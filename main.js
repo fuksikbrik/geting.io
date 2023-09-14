@@ -328,9 +328,15 @@ promoBtns.forEach(item => {
 closeBtn.addEventListener('click', function () {
 	modalWindow.classList.remove('active-modal')
 })
-
+let allertMessage = document.querySelector('.alert-message')
+let modalTitle = document.querySelector('.modal-title')
 let myFunction = () => {
 	navigator.clipboard.writeText("konda");
+	allertMessage.classList.add('active-message')
+	modalTitle.classList.add('active-title')
+	setTimeout(() => allertMessage.classList.remove('active-message'), 3000)
+	setTimeout(() => modalTitle.classList.remove('active-title'), 3000)
+	
 	
 	console.log('click')
 
